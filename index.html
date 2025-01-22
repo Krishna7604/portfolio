@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krishna portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oleo+Script:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <!-- <img src="./images/logo.png" alt="" /> -->
+        <h2 class="logo__name">KrishnaVardhan Reddy</h2>
+      </div>
+      <div class="nav-toggle" aria-label="navigation toggle">
+        <div class="hamburger" onclick="handleClick()">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="menu_items">
+          <li class="nav_item" onclick="handleClick()">
+            <a href="#main" class="nav__link">Home</a>
+          </li>
+          <li class="nav_item" onclick="handleClick()">
+            <a href="#about" class="nav__link"> About</a>
+          </li>
+          <li class="nav_item" onclick="handleClick()">
+            <a href="#skills" class="nav__link"> Skills</a>
+          </li>
+          <li class="nav_item" onclick="handleClick()">
+            <a href="#projects" class="nav__link"> projects</a>
+          </li>
+          <li class="nav_item" onclick="handleClick()">
+            <a href="#contact" class="nav__link"> contact us</a>
+          </li>
+        </div>
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav_item">
+            <a href="#about" class="nav__link"> About</a>
+          </li>
+          <li class="nav_item">
+            <a href="#skills" class="nav__link">Skills</a>
+          </li>
+          <li class="nav_item">
+            <a href="#projects" class="nav__link">Projects</a>
+          </li>
+          <li class="nav_item">
+            <a href="#contact" class="nav__link">contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- introduction -->
+
+    <section class="introduction" id="main">
+      <div class="intro__image">
+        <img src="asserts/profile.png" alt="profile image" />
+      </div>
+      <div class="intro__details">
+        <p class="intro_title">
+          Hello, I am<strong>krishnaVardhan Reddy</strong>
+        </p>
+        <p class="intro_role">developer</p>
+        <div class="contact_btns">
+          <button
+            class="contact_cv"
+            onclick="location.href='asserts/krishnaVardhan-resume.pdf'"
+          >
+            Download CV
+          </button>
+          <button class="contact_us" onclick="location.href='#contact'">
+            Contact us
+          </button>
+        </div>
+        <div class="social_contacts">
+          <a
+            href="https://www.linkedin.com/in/krishnavardhan2906/"
+            class="social_link"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/Krishna7604" class="social_link">
+            <i class="fa-brands fa-square-github"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- about me -->
+    <section class="about">
+      <div class="section_title">
+        <h1 id="about">About Me</h1>
+      </div>
+      <div class="section_container">
+        <div class="about_intro">
+          <h2>My Introduction</h2>
+          <p class="about_details">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+            sunt odio numquam quos asperiores aperiam error doloremque veritatis
+            fugiat qui! Repellendus ducimus rerum tempora ut, veniam debitis
+            corporis aliquam fuga obcaecati placeat provident iusto doloribus
+            dignissimos nulla molestias laboriosam vel quisquam esse vitae optio
+            tempore iure accusamus assumenda voluptates. Inventore!
+          </p>
+          <button
+            class="contact_cv"
+            onclick="location.href='asserts/krishnaVardhan-resume.pdf'"
+          >
+            Download CV
+          </button>
+        </div>
+        <div class="education_list">
+          <div class="education">
+            <p class="cname">
+              PBR Visvodaya Institute of Technology and science
+            </p>
+            <p class="cmajor">Computer Science Engineering - AI</p>
+            <p class="cduration">2021-2025</p>
+            <p class="grade"><strong>9.0</strong>/10.0</p>
+          </div>
+          <div class="education">
+            <p class="cname">Sri Chaitanya Junior Collage</p>
+            <p class="cmajor">Intermediate</p>
+            <p class="cduration">2019-2021</p>
+            <p class="grade"><strong>9.8</strong>/10</p>
+          </div>
+          <div class="education">
+            <p class="cname">RR English Medium High School</p>
+            <p class="cmajor">10th</p>
+            <p class="cduration">2018-2019</p>
+            <p class="grade"><strong>9.8</strong>/10</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skills -->
+    <section class="skills">
+      <div class="section_title">
+        <h1 id="skills">Skills</h1>
+      </div>
+      <div class="skillsscroll">
+        <div class="skills_list" style="--time: 25s">
+          <div>
+            <img
+              src="asserts/c-plusplus-svgrepo-com.svg"
+              alt=""
+              class="skill"
+            />
+            <img src="asserts/c-sharp-svgrepo-com.svg" alt="" class="skill" />
+            <img src="asserts/python-svgrepo-com.svg" alt="" class="skill" />
+            <img src="asserts/java-svgrepo-com.svg" alt="" class="skill" />
+            <img src="asserts/html-5-svgrepo-com.svg" alt="" class="skill" />
+            <img src="asserts/css-3-svgrepo-com.svg" alt="" class="skill" />
+            <img
+              src="asserts/javascript-svgrepo-com.svg"
+              alt=""
+              class="skill"
+            />
+            <img src="asserts/r-lang-svgrepo-com.svg" alt="" class="skill" />
+            <img
+              src="asserts/android-icon-svgrepo-com.svg"
+              alt=""
+              class="skill"
+            />
+          </div>
+          <div>
+            <img
+              src="asserts/c-plusplus-svgrepo-com.svg"
+              alt=""
+              class="skill"
+            />
+            <img src="asserts/c-sharp-svgrepo-com.svg" alt="" class="skill" />
+            <img src="asserts/python-svgrepo-com.svg" alt="" class="skill" />
+            <img src="asserts/java-svgrepo-com.svg" alt="" class="skill" />
+            <img src="asserts/html-5-svgrepo-com.svg" alt="" class="skill" />
+            <img src="asserts/css-3-svgrepo-com.svg" alt="" class="skill" />
+            <img
+              src="asserts/javascript-svgrepo-com.svg"
+              alt=""
+              class="skill"
+            />
+            <img src="asserts/r-lang-svgrepo-com.svg" alt="" class="skill" />
+            <img
+              src="asserts/android-icon-svgrepo-com.svg"
+              alt=""
+              class="skill"
+            />
+          </div>
+        </div>
+        <div class="skills_list" style="--time: 15s">
+          <div>
+            <img src="asserts/expo-svgrepo-com.svg" alt="" class="skill" />
+            <img src="asserts/git-icon-svgrepo-com.svg" alt="" class="skill" />
+            <img src="asserts/jupyter-svgrepo-com.svg" alt="" class="skill" />
+            <img src="asserts/linux-tux-svgrepo-com.svg" alt="" class="skill" />
+            <img src="asserts/pytorch-svgrepo-com.svg" alt="" class="skill" />
+            <img
+              src="asserts/tensorflow-svgrepo-com.svg"
+              alt=""
+              class="skill"
+            />
+            <img src="asserts/vitejs-svgrepo-com.svg" alt="" class="skill" />
+            <img src="asserts/spring-svgrepo-com.svg" alt="" class="skill" />
+            <img src="asserts/sqlite-svgrepo-com.svg" alt="" class="skill" />
+          </div>
+          <div>
+            <img src="asserts/expo-svgrepo-com.svg" alt="" class="skill" />
+            <img src="asserts/git-icon-svgrepo-com.svg" alt="" class="skill" />
+            <img src="asserts/jupyter-svgrepo-com.svg" alt="" class="skill" />
+            <img src="asserts/linux-tux-svgrepo-com.svg" alt="" class="skill" />
+            <img src="asserts/pytorch-svgrepo-com.svg" alt="" class="skill" />
+            <img
+              src="asserts/tensorflow-svgrepo-com.svg"
+              alt=""
+              class="skill"
+            />
+            <img src="asserts/vitejs-svgrepo-com.svg" alt="" class="skill" />
+            <img src="asserts/spring-svgrepo-com.svg" alt="" class="skill" />
+            <img src="asserts/sqlite-svgrepo-com.svg" alt="" class="skill" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="certificates">
+      <h1 class="section_title">certificates</h1>
+      <div class="certificate_container">
+        <div class="cmove_btn-prev certicon" id="prev_btn">
+          <img src="" alt="" class="certi perv" />
+        </div>
+        <div class="cmain_img certicon">
+          <img src="" alt="" class="certi main" />
+        </div>
+        <div class="cmove_btn-next certicon" id="next_btn">
+          <img src="" alt="" class="certi next" />
+        </div>
+      </div>
+    </section>
+    <!-- project -->
+    <section class="projects">
+      <h1 class="section_title" id="projects">projects</h1>
+      <div class="projects_container">
+        <div class="project_detail">
+          <div class="project_img">
+            <img src="asserts/medbot.png" alt="" />
+          </div>
+          <div class="project_desc">
+            <p class="desc">
+              Developed a medical chatbot utilizing a Retrieval-Augmented
+              Generation (RAG) model, leveraging a com- prehensive medical
+              encyclopaedia as the primary knowledge source.
+            </p>
+          </div>
+          <div class="project_stack">
+            <strong>Tech Stack: </strong> <span>RAG</span><span>Python</span
+            ><span>NLP</span><span> Pinecone vector store</span
+            ><span>ChatGPT API</span><span>Flask</span>
+          </div>
+        </div>
+
+        <div class="project_detail">
+          <div class="project_img">
+            <img src="asserts/pic.jpeg" alt="" />
+          </div>
+          <div class="project_desc">
+            <p class="desc">
+              Designed and developed a quiz application that empowers teachers
+              to generate AI-based quizzes using Vertex AI, Firebase for
+              seamless quiz distribution to students and real-time data
+              synchronization.
+            </p>
+          </div>
+          <div class="project_stack">
+            <strong>Tech Stack: </strong> <span>Android</span
+            ><span>Firebase</span><span>GCP</span><span>Vertex AI</span>
+          </div>
+        </div>
+        <div class="project_detail">
+          <div class="project_img">
+            <img src="asserts/Churn-Prediction.jpg" alt="" />
+          </div>
+          <div class="project_desc">
+            <p class="desc">
+              Developed and deployed churn prediction models using machine
+              learning and data preprocessing techniques to identify at-risk
+              customers and enhance retention strategies.
+            </p>
+          </div>
+          <div class="project_stack">
+            <strong>Tech Stack: </strong> <span>pandas</span
+            ><span>tensorflow</span><span>Machine Learning</span>
+          </div>
+        </div>
+        <!-- <div class="project_detail">
+          <div class="project_img">
+            <img src="asserts/html-5-svgrepo-com.svg" alt="" />
+          </div>
+          <div class="project_desc">
+            <p class="desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Obcaecati earum enim eum temporibus rerum. Distinctio nulla iure
+              quaerat accusamus quae veniam, rerum voluptas quo nisi fugiat
+              voluptate molestiae nostrum minima.
+            </p>
+          </div>
+          <div class="project_stack">
+            <strong>Tech Stack: </strong> <span>hdsi</span><span>dsfa</span
+            ><span>dfae</span>
+          </div>
+        </div> -->
+      </div>
+    </section>
+    <!-- contact us -->
+    <section class="contact">
+      <h1 class="section_title" id="contact">Contact ME</h1>
+      <div class="contact_container">
+        <div class="contact_details">
+          <h1 class="section_title">Details</h1>
+          <div class="cdetail">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Nellore, Andhra Pradesh,India</span>
+          </div>
+          <div class="cdetail">
+            <i class="fa-solid fa-phone"></i>
+            <span>+91 91216 17604</span>
+          </div>
+          <div
+            class="cdetail mail"
+            onclick="window.location.href='mailto:krishnavardhan2906@gmail.com'"
+          >
+            <i class="fa-solid fa-envelope"></i>
+            <span>krishnavardhan2906@gmail.com</span>
+          </div>
+          <hr />
+          <div class="social_contacts contact_links">
+            <a
+              href="https://www.instagram.com/krishna_vardhan7604/"
+              class="social_link"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://x.com/Krishna7604" class="social_link">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/krishnavardhan2906/"
+              class="social_link"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Krishna7604" class="social_link">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <div class="contact_form">
+          <form action="send_message.php" method="POST" id="form">
+            <label for="name"> Name: </label>
+            <input
+              type="text"
+              name="name"
+              class="inp"
+              id="name"
+              placeholder="Your Name"
+              required
+            />
+            <label for="email"> Email: </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="inp"
+              placeholder="Your Email"
+              required
+            />
+            <label for="desc"> Message: </label>
+            <textarea
+              name="desc"
+              id="message"
+              rows="6"
+              class="inp"
+              name="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <input type="submit" value="send Message" />
+          </form>
+          <p id="responseMessage"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="foot">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav_item">
+            <a href="#main" class="nav__link">Home</a>
+          </li>
+          <li class="nav_item">
+            <a href="#about" class="nav__link"> About</a>
+          </li>
+          <li class="nav_item">
+            <a href="#skills" class="nav__link">Skills</a>
+          </li>
+          <li class="nav_item">
+            <a href="#projects" class="nav__link">Projects</a>
+          </li>
+          <li class="nav_item">
+            <a href="#contact" class="nav__link">contact Us</a>
+          </li>
+        </ul>
+      </nav>
+      <p>&copy; 2025 KrishnaVardhan|All Rights Reservered</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

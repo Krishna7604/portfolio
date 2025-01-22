@@ -652,4 +652,7 @@ footer .nav_item a:hover {
   .contact_details {
     padding: 0;
   }
+  .cdetail {
+    font-size: 1.15rem;
+  }
 }

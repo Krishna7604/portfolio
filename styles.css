@@ -649,4 +649,7 @@ footer .nav_item a:hover {
   .projects_container {
     grid-template-columns: 1fr;
   }
+  .contact_details {
+    padding: 0;
+  }
 }
